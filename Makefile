@@ -63,7 +63,7 @@ endef
 
 define Package/node-request/install
 	$(INSTALL_DIR) $(1)/usr/lib/node
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/node_modules/* $(1)/usr/lib/node/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/node_modules/* $(1)/usr/lib/node_modules/
 endef
 
 $(eval $(call BuildPackage,node-request))
